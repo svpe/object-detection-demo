@@ -35,7 +35,7 @@ function draw() {
   if (modelLoaded) {
     //teken groene kader rond elk gevonden object
     for (let i = 0; i < objects.length; i++) {
-      if (objects[i].confidence > 0.80 && object[i].label != "bycicle") {
+      if (objects[i].confidence > 0.80 && objects[i].label !== "bycicle") {
         noStroke();
         fill(0, 208, 133);
         // textSize(8);
